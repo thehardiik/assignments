@@ -1,4 +1,3 @@
-*all codes provided by Hardik Srivastava 
 ques 2
 
 #include <stdio.h>
