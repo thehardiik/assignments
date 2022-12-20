@@ -1,0 +1,188 @@
+*all codes provided by Hardik Srivastava 
+ques 2
+
+#include <stdio.h>
+int main(){
+int a , b , c , d , e;
+a = 5;
+b = 10;
+c = 5;
+d = 15;
+e = 20;
+float average = a + b + c + d + e;
+printf("The average is : %f" , average);
+return 0;
+}
+
+ques 3
+
+
+
+#include <stdio.h>
+int main(){
+
+    float radius = 9.77;
+    float area = 3.14 * radius * radius;
+    printf("Area of circle is : %f", area);
+
+    return 0;
+}
+
+
+ques 4
+
+
+
+#include <stdio.h>
+int main(){
+
+    float length = 6;
+    float breadth = 10000;
+
+    printf("%f" , length * breadth);
+
+    return 0;
+}
+
+
+ques 5
+
+
+
+#include <stdio.h>
+int main(){
+
+    float a = 9.77;
+    float b = 10;
+    float c = 8;
+    float s = (a + b + c)/2;
+    float area = sqrt(s * (s-a) * (s-b) * (s-c));
+    printf("Area of circle is : %f", area);
+
+    return 0;
+}
+
+ques 6
+
+
+
+#include <stdio.h>
+int main(){
+    float principal = 10000;
+    float time = 10;
+    float rate = 7;
+
+    float final_amount = principal * (pow((1 + (rate/100)), time));
+    printf("%f" , final_amount);
+
+return 0;
+}
+
+ques 7 
+
+#include <stdio.h>
+int main(){
+    float principal = 10000;
+    float time = 10;
+    float rate = 7;
+
+    float final_amount = principal * (pow((1 + (rate/100)), time));
+    printf("%f" , final_amount);
+
+return 0;
+}
+
+ques 8
+
+
+
+#include <stdio.h>
+int main(){
+
+ int a = 1;
+ int b = -3;
+ int c = 2;
+ int d = (4*a*c);
+
+ float first_solution = (-b + sqrt(pow(b,2) - (4 * a * c)))/(2*a);
+ float second_solution = (-b - sqrt(pow(b,2) - (4 * a * c)))/(2*a);
+
+ printf("first solution is %f and second solution is %f", first_solution , second_solution);
+
+return 0;
+}
+
+ques 9
+
+
+
+#include <stdio.h>
+int main(){
+float circumference = 44;
+
+float area = (circumference * circumference)/(4*3.14);
+
+printf("Area of circle is %f", area);
+
+return 0;
+}
+
+ques 10
+
+
+
+#include <stdio.h>
+int main(){
+
+int u = 10;
+int a = 7;
+int t = 16;
+
+int v = u + a*t;
+
+printf("final velocity is %d", v);
+
+return 0;
+}
+
+ques 11
+
+
+
+#include <stdio.h>
+int main(){
+
+int u = 10;
+int a = 7;
+int t = 14;
+
+int s = u*t + (t*t)/2;
+
+printf("Displacement is %d" , s);
+
+return 0;
+}
+
+
+ques 12
+
+
+
+#include <stdio.h>
+int main(){
+float C = 90;
+float F = C*9/5 + 32;
+printf("%f in Celsius is %f in Fahrenheit" , C , F);
+return 0;
+}
+
+
+ques 13
+
+#include <stdio.h>
+int main(){
+float F = 194;
+float C = (F-32) * 5/9;
+printf("%f in Fahrenheit is %f in Celsius" , F , C);
+return 0;
+}
