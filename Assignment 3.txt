@@ -207,3 +207,85 @@ int main(){
     }
 return 0;
 }
+
+ques 12
+
+#include <stdio.h>
+int main(){
+    int a = 65;
+    int b = 70;
+    int c = 50;
+    if(a + b + c == 180){
+       printf("Triangle is valid");
+    }
+    else{
+       printf("Triangle is not valid");
+    }
+return 0;
+}
+
+
+ques 13
+
+#include <stdio.h>
+int main(){
+     int a = 3;
+     int b = 4;
+     int c = 5;
+     if(a + b > c && b + c > a && a + c > b){
+         printf("Triangle is valid");
+     }
+     else{
+         printf("Triangle is not valid");
+     }
+return 0;
+}
+
+ques 14
+
+#include <stdio.h>
+int main(){
+     int a = 4;
+     int b = 4;
+     int c = 4;
+     if(a + b > c && b + c > a && a + c > b){
+         printf("Triangle is valid \n");
+         if(a==b && b == c){
+            printf("Equilateral Triangle");
+         }
+         else if(a==b || b==c || a==c){
+            printf("Isosceles Triangle");
+         }
+         else{
+            printf("Scalene Triangle");
+         }
+     }
+     else{
+         printf("Triangle is not valid");
+     }
+return 0;
+}
+
+
+ques 15
+
+#include <stdio.h>
+int main(){
+    int num = 371;
+    int num2 = num;
+    int cube = (num%10) * (num%10) * (num%10);
+    num = num/10;
+    cube = cube + (num%10) * (num%10) * (num%10);
+    num = num/10;
+    cube = cube + (num%10) * (num%10) * (num%10);
+    if(cube == num2){
+       printf("Armstrong Number");
+
+    }
+    else{
+       printf("Not an armstrong number");
+    }
+
+return 0;
+}
+
