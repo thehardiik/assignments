@@ -1,0 +1,638 @@
+ques 5 - 
+#include <stdio.h>
+int main(){
+    int n = 4;
+
+    // ques 1
+    for(int i = 0; i < n; i++){
+      printf("#");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 2 
+
+    for(int i = 0; i < n; i++){
+        printf("#\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 3
+
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            printf("#");
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("\n");
+
+    // part 4
+
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j <= i; j++){
+            printf("?");
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("\n");
+
+    // part 5
+
+    char ch = '%';
+
+    for(int i = 0; i < n; i++){
+        for(int j = n-1; j > i; j--){
+            printf(" ");
+        }
+        for(int j = 0; j <= i; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 6
+
+    for(int i = 0; i < n; i++){
+        for(int j = n; j > i; j--){
+            printf("@");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 7
+
+    for(int i = 0; i < n; i ++){
+        for(int j = 0; j < i; j++){
+            printf(" ");
+        }
+        for(int j = 4; j > i; j--){
+            printf("&");
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 8
+
+    for(int i = 0; i < n; i++){
+        for(int j = 1; j <= n-i; j++){
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 9
+
+    for(int i = 0; i < n; i ++){
+        for(int j = 0; j < i; j++){
+            printf(" ");
+        }
+        for(int j = 4; j > i; j--){
+            printf("%d" , j-i);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 10
+
+    for(int i = n; i >0; i--){
+        for(int j = n; j >= i; j--){
+            printf("%d" , i);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    printf("\n");
+
+    // part 11
+
+    for(int i = 0; i < n; i ++){
+        for(int j = n-1; j > i; j--){
+            printf(" ");
+        }
+        for(int j = 0; j <= i; j++){
+            printf("%d" , j);
+        }
+        printf("\n");
+    }
+     printf("\n");
+    printf("\n");
+
+    // part 12
+    int c = 0;
+    for(int i = 0; i < 5; i++){
+
+        for(int j = 0; j <= i; j++){
+            if(c==9){
+                    c = 0;
+                printf("%d" , c);
+
+            }
+            else{
+            c++;
+            printf("%d" , c);
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+    }
+   
+    // part 13
+    
+    #include <stdio.h>
+int main() {
+int n = 4;
+for (int i = 1; i <= n; i++) {
+for (int j = 1; j <= 2 * i - 1; j++) {
+printf("%d ", j);
+}
+printf("\n");
+}
+for (int i = 1; i <= n - 1; i++) {
+for (int j = 1; j <= 2 * (n - i) - 1; j++) {
+printf("%d ", j);
+}
+printf("\n");
+}
+return 0;
+}
+
+// part 14
+
+#include <stdio.h>
+int main() {
+int n = 4;
+for (int i = 1; i <= n; i++) {
+printf("*");
+}
+printf("\n");
+for (int i = 1; i <= n - 2; i++) {
+for (int j = 1; j <= n - i - 1; j++) {
+printf(" ");
+}
+printf("*\n");
+}
+for (int i = 1; i <= n; i++) {
+printf("*");
+}
+printf("\n");
+return 0;
+}
+
+part 15
+
+#include <stdio.h>
+int main() {
+int n = 4;
+for (int i = 1; i <= n; i++) {
+printf("*");
+}
+printf("\n");
+for (int i = 1; i <= n - 2; i++) {
+printf("*");
+for (int j = 1; j <= n - 2; j++) {
+printf(" ");
+}
+printf("*\n");
+}
+for (int i = 1; i <= n; i++) {
+printf("*");
+}
+printf("\n");
+return 0;
+}
+
+part 17
+
+#include <stdio.h>
+int main() {
+int n = 4, symbol = 1;
+for (int i = 1; i <= n; i++) {
+for (int j = 1; j <= 2 * i - 1; j++) {
+printf("%d", symbol);
+symbol = (symbol + 1) % 2;
+}
+printf("\n");
+}
+for (int i = 1; i <= n - 1; i++) {
+for (int j = 1; j <= 2 * (n - i) - 1; j++) {
+
+printf("%d", symbol);
+symbol = (symbol + 1) % 2;
+}
+printf("\n");
+}
+return 0;
+
+ques 6 
+
+part 1
+
+#include <stdio.h>
+int main() {
+int n = 4;
+double sum = 0.0;
+for (int i = 1; i <= n; i++){
+sum += 1.0 / i;
+}
+printf("%lg", sum);
+return 0;
+}
+
+part 2
+
+#include <stdio.h>
+int main() {
+int n = 4;
+double sum = 0.0, sign = 1.0;
+for (int i = 1; i <= n; i++) {
+sum += sign / i;
+sign *= -1.0;
+}
+printf("%lg", sum);
+return 0;
+}
+
+part 3
+
+#include <stdio.h>
+int main() {
+int n = 400;
+double sum = 0.0, sign = 1.0;
+for (int i = 1; i <= n; i++) {
+sum += sign / (2.0 * i - 1.0);
+
+sign *= -1.0;
+}
+sum *= 4.0;
+printf("%lg", sum);
+return 0;
+}
+
+part 4
+
+#include <stdio.h>
+int main() {
+int n = 40;
+double x = 0.3;
+double sum = 0.0, sign = 1.0, x_n = x;
+for (int i = 1; i <= n; i++) {
+sum += (sign * x_n) / i;
+x_n *= x;
+sign *= -1.0;
+}
+printf("%lg", sum);
+return 0;
+}
+
+part 5
+
+#include <stdio.h>
+int main() {
+int n = 40;
+double x = 0.3;
+double sum = 0.0, x_n = 1, n_fac = 1;
+for (int i = 1; i <= n; i++) {
+sum += x_n / n_fac;
+x_n *= x;
+n_fac *= i;
+}
+printf("%lg", sum);
+return 0;
+}
+
+part 6
+
+#include <stdio.h>
+int main() {
+int n = 40;
+double x = 0.3;
+double sum = 0.0, sign = 1.0, x_2n = x, x_2 = x * x, fac = 1.0;
+for (int i = 1; i <= n; i++) {
+sum += (sign * x_2n) / fac;
+sign *= -1.0;
+x_2n *= x_2;
+fac *= (2 * i) * (2 * i + 1);
+}
+printf("%lg", sum);
+return 0;
+}
+
+part 7
+
+#include <stdio.h>
+int main() {
+int n = 40;
+double x = 0.3;
+double sum = 0.0, sign = 1.0, x_2n = 1, x_2 = x * x, fac = 1.0;
+for (int i = 1; i <= n; i++) {
+sum += (sign * x_2n) / fac;
+sign *= -1.0;
+x_2n *= x_2;
+fac *= (2 * i - 1) * (2 * i);
+}
+printf("%lg", sum);
+return 0;
+}
+
+
+   
+   
+
+
+
+ques 7
+
+#include <stdio.h>
+int main(){
+     int r1 = 4;
+     int r2 = 2;
+     int r3 = 0;
+     int r4 = 10;
+     int r5 = 7;
+     printf("Over 1: ");
+     hashtag(r1);
+     printf("\n");
+     printf("Over 2: ");
+     hashtag(r2);
+     printf("\n");
+     printf("Over 3: ");
+     hashtag(r3);
+     printf("\n");
+     printf("Over 4: ");
+     hashtag(r4);
+     printf("\n");
+     printf("Over 5: ");
+     hashtag(r5);
+return 0;
+}
+
+void hashtag(runs){
+   for(int i = 1; i <= runs; i++){
+      printf("#");
+   }
+
+}
+
+ques 8
+
+#include <stdio.h>
+int main() {
+int a = 6, b = 9;
+int lcm = a > b ? a : b;
+for (; ; lcm++)
+if (lcm % a == 0 && lcm % b == 0)
+break;
+printf("LCM: %d\n", lcm);
+return 0;
+}
+
+ques 9
+
+#include <stdio.h>
+int main() {
+int a = 18, b = 9;
+int gcd = 1;
+for (int i = 1; i <= a && i <= b; i++)
+if (a % i == 0 && b % i == 0)
+gcd = i;
+printf("GCD: %d\n", gcd);
+return 0;
+}
+
+ques 10 -
+
+#include <stdio.h>
+int main(){
+    int n = 3456;
+    int count = 0;
+
+    while(n >0){
+         n = n/10;
+         count++;
+    }
+    printf("No. of digits is : %d", count);
+
+
+return 0;
+}
+
+ques 11- 
+
+#include <stdio.h>
+int main(){
+    int n = 1000;
+    for(int i = 2; i < n; i = i+2){
+       printf("%d\n", i);
+    }
+return 0;
+}
+
+ques 12- 
+
+#include <stdio.h>
+int main(){
+   int n = 6;
+   for(int i = 1; i <= 10; i++){
+       printf("%d X %d = %d\n", n , i , i*n );
+   }
+return 0;
+}
+
+ques 13-
+
+#include <stdio.h>
+int main(){
+   int n = 5544;
+   int sum = 0;
+   int product = 1;
+   while(n > 0){
+      sum = sum + (n%10);
+      product = product * (n%10);
+      n = n/10;
+   }
+   printf("Sum : %d & Product: %d", sum , product);
+return 0;
+}
+
+ques 14 - 
+
+#include <stdio.h>
+int main(){
+    int n = 57768;
+    int rev = 0;
+    while(n > 0){
+       rev = rev*10 + (n%10);
+       n = n/10;
+    }
+    printf("%d", rev);
+return 0;
+}
+
+ques 15-
+
+#include <stdio.h>
+int main(){
+    int n = 23;
+    int i = 1;
+    for( i = 1; i < n; i++){
+        if(n%i == 0){
+         printf("%d is not prime", n);
+         break;
+        }
+    }
+    if(i == 23){
+    printf("%d is Prime", n);
+    }
+return 0;
+}
+
+ques 16
+
+#include <stdio.h>
+#include <math.h>
+int main() {
+int m = 100;
+for (int n = 2; n <= 100; n++) {
+int is_prime = 1;
+int sqrt_n = sqrt(n);
+for (int i = 2; i <= sqrt_n; i++) {
+if (n % i == 0) {
+is_prime = 0;
+break;
+}
+}
+if (is_prime) printf("%d\n", n);
+}
+return 0;
+
+ques 17- 
+
+#include <stdio.h>
+int main(){
+
+   int n = 5;
+   int factorial = 1;
+   for(int i = 1; i <= n; i++){
+       factorial = factorial * i;
+   }
+   printf("%d" , factorial);
+return 0;
+}
+
+ques 18-
+
+#include <stdio.h>
+int main() {
+int m = 145;
+int sum = 0, copy = m;
+for (; m; m /= 10) {
+int n = m % 10;
+int factorial = 1;
+for (int i = 1; i <= n; i++){
+factorial *= i;
+sum += factorial;
+}
+}
+printf(copy && copy == sum ? "Strong number.\n" : "Not a strong number.\n");
+return 0;
+}
+
+ques 19
+
+#include <stdio.h>
+int main() {
+int n = 12345;
+for (int i = 2; i <= n; i++) {
+if (n % i == 0) {
+printf("%d\n", i);
+n /= i;
+i = 2;
+}
+}
+return 0;
+}
+
+ques 20
+
+#include <stdio.h>
+int main() {
+int n = 9;
+int p = 0, q = 1;
+for (int i = 1; i <= n; i++) {
+printf("%d : %d\n", i, p);
+int t = p + q;
+p = q;
+q = t;
+}
+return 0;
+}
+
+ques 21
+
+#include <stdio.h>
+int main() {
+double x = 3.0;
+int n = 3;
+double x_n = 1.0;
+for (int i = 1; i <= n; i++)
+x_n *= x;
+printf("%lg\n", x_n);
+return 0;
+}
+
+ques 22
+
+#include <stdio.h>
+int main() {
+int n = 34;
+double x_n = 1.0;
+for (; n % 2;) {
+printf("%d is odd.\n", n);
+break;
+}
+for (; n % 2 == 0;) {
+printf("%d is even.\n", n);
+break;
+}
+return 0;
+}
+
+ques 23
+
+#include <stdio.h>
+int main() {
+int year = 120;
+for (; year % 400 == 0;) {
+printf("Leap year.\n");
+return 0;
+}
+for (; year % 100 != 0;) {
+for (; year % 4 == 0;) {
+printf("Leap year.\n");
+return 0;
+}
+printf("Not a leap year.\n");
+return 0;
+}
+printf("Not a leap year.\n");
+return 0;
+}
+
